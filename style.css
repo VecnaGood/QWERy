@@ -730,6 +730,14 @@ body {
         width: 0;
         height: 0;
     }
+
+    .header__menu-item{
+        display: none;
+    }
+    .header__item--active{
+        display: block;
+    }
+ 
     .burger_btn {
         display: block;
         z-index: 99;
