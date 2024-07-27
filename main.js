@@ -1,14 +1,23 @@
 const burger__menu = document.querySelector('.burger__menu');
 const header__menu_list = document.querySelector('.header__menu_list');
-// const header__inner = document.querySelector('.header__inner');
 const burger_btn = document.querySelectorAll('.burger_btn');
+const header__item = document.querySelectorAll('.header__item');
+
+
 
 burger__menu.addEventListener('click', () => {
   header__menu_list.classList.toggle('menu__list--mobail');
+ 
+
   burger_btn.forEach(burger_btn => {
     burger_btn.classList.toggle('burger_btn--active');
   });
+  header__item.forEach(header__item => {
+    header__item.classList.toggle('header__item--active');
+  });
 });
+
+
 
 
 
